@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    font-family: "Hubot Sans", sans-serif;
+}
+
+hr {
+    border: 1px solid rgb(0, 0, 0, 0.5);;
+  }
+
+img {
+    height: 200px;
+    width: 200px;
+}
+
+header {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+
+    background-color: #F5E74D;
+}
+
+.blocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 25px;
+}
+
+.block {
+    padding: 25px;
+    border-radius: 5px;
+
+    background-color: white;
+}
+
+.block-title {
+    margin-top: 0;
+}
+
+.block > .block-description {
+}
+
+.block > .block-description:last-child {
+    margin-bottom: 0;
+}
+
+footer {
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-title {
+    color: rgb(0, 0, 0, 0.5);
+}
+
+.footer-text {
+    font-weight: 500;
+}
+
+.link {
+    color: rgb(0, 0, 0, 0.75);
+    text-decoration: none;
+}
+
+.container-1 {
+    width: 50%;
+    text-align: justify;
+    margin-bottom: 25px;;
+}
+
+.container-1 > h4 {
+    margin-bottom: 0;
+}
+
+.examples {
+    display: flex;
+    gap: 50px;
+    font-weight: 500;
+}
+
+@media (max-width: 900px) {
+    .blocks {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 25px;
+    }
+
+    .container-1 {
+        width: 75%;
+        text-align: justify;
+        margin-bottom: 25px;;
+    }
+}
+
+@media (max-width: 600px) {
+    .blocks {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 25px;
+    }
+
+    .container-1 {
+        width: 100%;
+        text-align: justify;
+        margin-bottom: 25px;;
+    }
+
+    .main-title {
+        text-align: center;
+    }
+}
