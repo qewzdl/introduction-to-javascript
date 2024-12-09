@@ -12,6 +12,10 @@ img {
     width: 200px;
 }
 
+.main-title {
+    margin: 0 25px 0 25px;
+}
+
 header {
     height: 50vh;
     display: flex;
